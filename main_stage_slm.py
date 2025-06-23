@@ -6,7 +6,7 @@ import argparse
 import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, cohen_kappa_score
 
-import os, sys; sys.path.append(os.path.dirname(__file__)+"/../../")
+import os, sys; sys.path.append(os.path.dirname(__file__)+"/../")
 import torchutils as utils
 from eegreader import ToTensor, EEGDataset, SeqEEGDataset
 import datasets.sleepedfreader as sedfreader

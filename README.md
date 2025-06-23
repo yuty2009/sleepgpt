@@ -17,7 +17,7 @@ Download the datasets (access requirements may apply) from the following links:
 
 - [SHHS](https://sleepdata.org/datasets/shhs)
 - [SleepEDF](https://physionet.org/content/sleep-edfx/1.0.0/)
-- [MASS](http://ceams-carsm.ca/mass/}{http://ceams-carsm.ca/mass/)
+- [MASS](http://ceams-carsm.ca/mass/)
 - [CAP](https://physionet.org/content/capslpdb/1.0.0/)
 
 Replace the data path in the code with the path to the downloaded data. Run the code in the "datasets" folder to preprocess the data. For example, to preprocess the SHHS dataset, run the following code:
@@ -68,3 +68,9 @@ If you use the code or results in your research, please consider citing our work
   url={https://www.medrxiv.org/content/early/2024/11/13/2024.10.26.24316166},
 }
 ```
+
+## Acknowledgements
+This project uses resources from:
+- [YASA](https://github.com/raphaelvallat/yasa)
+- [minGPT](https://github.com/karpathy/minGPT)
+- [Transformers](https://github.com/huggingface/transformers)

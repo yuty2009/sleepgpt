@@ -114,13 +114,11 @@ class SeqSleepNet(nn.Module):
 if __name__ == '__main__':
 
     from sleepnet import TinySleepNet, DeepSleepNet
-    from wat import WaT
 
     x = torch.randn((20, 10, 1, 3000, 1))
 
     base_encoder = DeepSleepNet(0, 3000)
     # base_encoder = TinySleepNet(0, 3000)
-    # base_encoder = WaT(0, 3000)
 
     model = SeqSleepNet(
         base_encoder, 

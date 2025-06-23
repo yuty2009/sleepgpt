@@ -13,7 +13,6 @@ from sklearn.metrics import confusion_matrix
 import torch
 import torch.nn as nn
 from torch.utils.tensorboard import SummaryWriter
-from timm.optim.optim_factory import param_groups_weight_decay
 
 import os, sys; sys.path.append(os.path.dirname(__file__)+"./")
 import torchutils as utils
@@ -190,8 +189,7 @@ def main():
         )
         print(sum(p.numel() for p in model.parameters() if p.requires_grad)/1e6, "M parameters")
         criterion = FocalLoss(alpha=2).to(args.device) # nn.CrossEntropyLoss().to(args.device)
-        param_groups = param_groups_weight_decay(model, args.weight_decay)
-        optimizer = torch.optim.AdamW(param_groups, lr=args.lr, betas=(0.9, 0.95))
+        optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay, betas=(0.9, 0.95))
 
         model = model.to(args.device)
 
