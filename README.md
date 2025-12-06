@@ -65,7 +65,7 @@ If you use the code or results in your research, please consider citing our work
   journal={medRxiv},
   year={2024},
   doi={10.1101/2024.10.26.24316166},
-  url={https://www.medrxiv.org/content/early/2024/11/13/2024.10.26.24316166},
+  url={https://www.medrxiv.org/content/10.1101/2024.10.26.24316166v4},
 }
 ```
 
